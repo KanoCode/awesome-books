@@ -164,6 +164,8 @@ body {
   
   .active-btn {
     color: blue;
+    border-right: 2px solid blue;
+
   }
   
   #last-modified {
