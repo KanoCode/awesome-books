@@ -1,18 +1,16 @@
-const form = document.querySelector("form");
-const bookList = document.getElementById("book-list");
+const form = document.querySelector('form');
+const bookList = document.getElementById('book-list');
 
 // for the nav section
-const AllBookSection = document.getElementById("All-Books");
-const formSection = document.getElementById("formSection");
-const ContactSection = document.getElementById("contact-us");
-const navBtns = document.querySelectorAll("nav button");
+const AllBookSection = document.getElementById('All-Books');
+const formSection = document.getElementById('formSection');
+const ContactSection = document.getElementById('contact-us');
+const navBtns = document.querySelectorAll('nav button');
 
-//variables for input fields
+// variables for input fields
 
-const Author = document.getElementById("author");
-const Title = document.getElementById("title");
-
-
+const Author = document.getElementById('author');
+const Title = document.getElementById('title');
 
 export {
   form,
