@@ -12,7 +12,7 @@ const updateUi = () => {
          <p class="p_by">by</p>
          <p class="p_author"> ${BookStored[i].author}</p>
         <button>Remove</button> 
-             </div>`;
+               </div>`;
 
     bookList.append(bookLi);
   }

@@ -5,7 +5,7 @@ import {
   ContactSection,
 } from './domElements.js';
 
-export default navBtns.forEach((a, i, arr) => {
+navBtns.forEach((a, i, arr) => {
   a.classList.remove('active-btn');
   a.addEventListener('click', () => {
     if (i === 0) {

@@ -1,5 +1,5 @@
 import { form, Title, Author } from './domElements.js';
-import updateUi  from './updateUi.js';
+
 export const bookArr = [];
 export const checkStorage = localStorage.getItem('bookArrObj');
 
@@ -26,7 +26,6 @@ export class UserBook {
   }
 
   removeBook() {
-    
     const removeBtns = document.querySelectorAll('#book-list button');
     const sortArr = JSON.parse(localStorage.getItem('bookArrObj'));
     removeBtns.forEach((a, b) => {
