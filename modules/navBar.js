@@ -10,7 +10,7 @@ navBtns.forEach((a, i, arr) => {
   a.classList.remove("active-btn");
   a.addEventListener("click", () => {
     if (i == 0) {
-      console.log(AllBookSection);
+     
       AllBookSection.style.display = "flex";
       formSection.style.display = "none";
       ContactSection.style.display = "none";
