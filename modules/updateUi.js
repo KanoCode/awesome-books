@@ -1,7 +1,6 @@
-import { bookList, navBtns } from './domElements.js';
+import { bookList } from './domElements.js';
 
 const updateUi = () => {
-  console.log(navBtns[0].classList)
   const bookLi = document.createElement('div');
   const BookStored = JSON.parse(localStorage.getItem('bookArrObj'));
 
