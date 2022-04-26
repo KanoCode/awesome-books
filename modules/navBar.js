@@ -5,7 +5,6 @@ import {
 } from './domElements.js';
 
 const NavFunction = (a, i, arr) => {
-  a.classList.remove('active-btn');
   a.addEventListener('click', () => {
     if (i === 0) {
       AllBookSection.style.display = 'flex';

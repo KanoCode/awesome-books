@@ -1,7 +1,7 @@
 import { bookList, navBtns } from './domElements.js';
 
 const updateUi = () => {
-  navBtns[0].classList.add('active-btn');
+  console.log(navBtns[0].classList)
   const bookLi = document.createElement('div');
   const BookStored = JSON.parse(localStorage.getItem('bookArrObj'));
 
