@@ -1,4 +1,3 @@
-import { UserBook } from './addBook.js';
 import { bookList, navBtns } from './domElements.js';
 
 const updateUi = () => {
@@ -16,9 +15,6 @@ const updateUi = () => {
 
     bookList.append(bookLi);
   }
-
-  const RemoveBook = new UserBook();
-  RemoveBook.removeBook();
 };
 
 export default updateUi;

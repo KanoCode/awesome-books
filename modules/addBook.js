@@ -15,27 +15,14 @@ export class UserBook {
     } else if (!checkStorage) {
       bookArr.push(this);
       localStorage.setItem('bookArrObj', JSON.stringify(bookArr));
-      location.reload();
+      window.location.reload();
     } else {
       const ArrayStored = localStorage.getItem('bookArrObj');
       const ArrayStoredParse = JSON.parse(ArrayStored);
       ArrayStoredParse.push(this);
       localStorage.setItem('bookArrObj', JSON.stringify(ArrayStoredParse));
-      location.reload();
+      window.location.reload();
     }
-  }
-
-  removeBook() {
-    const removeBtns = document.querySelectorAll('#book-list button');
-    const sortArr = JSON.parse(localStorage.getItem('bookArrObj'));
-    removeBtns.forEach((a, b) => {
-      a.addEventListener('click', () => {
-        const sortedArr = sortArr.filter((c) => c !== sortArr[b]);
-        localStorage.setItem('bookArrObj', JSON.stringify(sortedArr));
-
-        location.reload();
-      });
-    });
   }
 }
 

@@ -1,11 +1,10 @@
 import {
-  navBtns,
   AllBookSection,
   formSection,
   ContactSection,
 } from './domElements.js';
 
-navBtns.forEach((a, i, arr) => {
+const NavFunction = (a, i, arr) => {
   a.classList.remove('active-btn');
   a.addEventListener('click', () => {
     if (i === 0) {
@@ -29,4 +28,6 @@ navBtns.forEach((a, i, arr) => {
     }
     a.classList.add('active-btn');
   });
-});
+};
+
+export default NavFunction;
